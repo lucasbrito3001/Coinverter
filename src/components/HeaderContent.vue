@@ -63,7 +63,7 @@ export default {
             if(this.clickButtonCollapseMenu == 0){
                 document.body.style.overflowY = 'hidden'
                 menuCollapse.style.overflow = 'visible'
-                menuCollapse.style.height = '90vh'
+                menuCollapse.style.height = '92.5vh'
                 this.clickButtonCollapseMenu = 1
             } else {
                 document.body.style.overflowY = 'visible'
