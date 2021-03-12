@@ -63,7 +63,7 @@ export default {
             if(this.clickButtonCollapseMenu == 0){
                 document.body.style.overflowY = 'hidden'
                 menuCollapse.style.overflow = 'visible'
-                menuCollapse.style.height = '92.5vh'
+                menuCollapse.style.height = '80vh'
                 this.clickButtonCollapseMenu = 1
             } else {
                 document.body.style.overflowY = 'visible'
@@ -94,7 +94,7 @@ nav {
 }
 
 .navbar-brand img{
-    width: 5vh;
+    width: 50px;
     margin-right: 10px;
 }
 
@@ -108,9 +108,9 @@ nav {
 
 .sandwich {
     display: block;
-    height: 5px;
+    height: 3px;
     width: 30px;
-    margin: 5px;
+    margin: 4px;
     background: var(--nav-link);
     border-radius: 5px;
 }

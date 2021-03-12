@@ -14,7 +14,7 @@
             <select name="convertedCurrency" id="targetCurrency" class="converterSelects" @change="selectTargetValue">
                 <option v-for="selectCurrency in currenciesSelectConverterTarget" :key="selectCurrency" :id="selectCurrency.code" :value="selectCurrency.code">{{selectCurrency.name}}</option>
             </select>
-            <p><span class="converterSelects" id="colorSpan">{{outputTargetCurrency}}</span></p>
+            <p class="converterSelects" id="res">{{outputTargetCurrency}}</p>
         </div>
 
     </div>
@@ -93,7 +93,7 @@ export default {
 
     .converterSelects {
         width: 100%;
-        height: 5vh;
+        height: 6.5vh;
     }
 
     select {
@@ -117,16 +117,15 @@ export default {
         outline: none;
         text-align: center;
         border-radius: 0 0 10px 10px;
-        padding: 10px;
         font-size: 2rem;
     }
-
-    span {
-        display: block;
+    
+    #res {
+        border-radius: 0 0 10px 10px;
         text-align: center;
-        padding: 5px;
+        line-height: 6.5vh;
+        overflow-y: hidden;
         font-size: 2rem;
-        width: 100%;
         color: var(--default-blue);
     }
 
@@ -140,14 +139,14 @@ export default {
             font-size: 1.5rem;
         }
 
+        #res { 
+            font-size: 1.5rem;
+        }
+
         option {
             background-color: white;
             font-size: .8rem;
             padding: 0px;
-        }
-
-        span {
-            font-size: 1.5rem;
         }
     }
 

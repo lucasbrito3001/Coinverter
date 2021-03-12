@@ -242,7 +242,7 @@ p {
 header {
   border-bottom: 6px solid var(--default-blue);
   box-shadow: 1px 2px 3px var(--nav-link);
-  height: 10vh;
+  min-height: fit-content;
   z-index: 100;
   background-color: var(--body-color);
   position: fixed;
@@ -267,7 +267,7 @@ header {
 
 #exchange-rate {
   width: 100%;
-  margin-top: 12vh;
+  margin-top: 15vh;
 }
 
 #exchange-rate h2 {
@@ -347,7 +347,11 @@ footer h2 {
   }
 
   p {
-    font-size: .75rem;
+    font-size: .83rem;
+  }
+
+  .container {
+    margin: 0 10px;
   }
 }
 
