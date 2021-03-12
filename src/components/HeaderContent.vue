@@ -211,6 +211,7 @@ nav {
         overflow: hidden;
         height: 0;
         transition: .4s ease-in-out;
+        justify-content: space-around;
         width: 100vw;
     }
 

@@ -39,6 +39,10 @@ export default {
         setTimeout( () => {
             this.bidRatio();
         }, 1000)
+
+        setInterval( () => {
+            this.bidRatio();
+        },30000)
     },
 
     methods: {

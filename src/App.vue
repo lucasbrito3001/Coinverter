@@ -201,7 +201,7 @@ export default {
     updateAPI(){
       setInterval( () => {
         this.requestAPI()
-      },60000)
+      },30000)
     }
 
   }
