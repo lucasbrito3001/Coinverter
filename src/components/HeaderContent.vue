@@ -80,10 +80,12 @@ export default {
 <style scoped>
 
 nav {
+    margin: 1vh 0;
+    height: fit-content;
     display: flex;
-    padding: 2vh 4vh;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .navbar-brand {
@@ -94,7 +96,7 @@ nav {
 }
 
 .navbar-brand img{
-    width: 50px;
+    width: 6vh;
     margin-right: 10px;
 }
 
@@ -117,11 +119,19 @@ nav {
 
 .navigation-links {
     display: flex;
+    flex-direction: row;
     padding: 1vh;
     width: 85%;
     justify-content: space-between;
     z-index: 100;
     background-color: var(--body-color);
+}
+
+.responsive-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
 }
 
 .nav-item {
@@ -187,9 +197,6 @@ nav {
 
     .responsive-menu {
         width: 90%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
     .navbar-toggler{
@@ -197,6 +204,7 @@ nav {
     }
 
     .navigation-links {
+        padding: 0%;
         flex-direction: column;
         overflow: hidden;
         height: 0;

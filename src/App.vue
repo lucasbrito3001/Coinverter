@@ -240,9 +240,9 @@ p {
 }
 
 header {
+  height: fit-content;
   border-bottom: 6px solid var(--default-blue);
   box-shadow: 1px 2px 3px var(--nav-link);
-  min-height: fit-content;
   z-index: 100;
   background-color: var(--body-color);
   position: fixed;
@@ -261,13 +261,12 @@ header {
 #main-content {
   max-width: 1000px;
   height: 88vh;
-  margin-bottom: 5vh;
+  margin: 12vh 0 0;
   overflow-x: hidden;
 }
 
 #exchange-rate {
   width: 100%;
-  margin-top: 15vh;
 }
 
 #exchange-rate h2 {
