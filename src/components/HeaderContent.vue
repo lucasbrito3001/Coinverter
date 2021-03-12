@@ -55,6 +55,8 @@ export default {
                 togglerText.innerHTML = 'Off'
                 this.clickButtonDarkmode = 0
             }
+
+            this.$emit('darkmode')
         },
 
         showMenu(){
@@ -63,7 +65,7 @@ export default {
             if(this.clickButtonCollapseMenu == 0){
                 document.body.style.overflowY = 'hidden'
                 menuCollapse.style.overflow = 'visible'
-                menuCollapse.style.height = '80vh'
+                menuCollapse.style.height = '89vh'
                 this.clickButtonCollapseMenu = 1
             } else {
                 document.body.style.overflowY = 'visible'
