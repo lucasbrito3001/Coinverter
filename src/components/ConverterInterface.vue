@@ -82,7 +82,7 @@ export default {
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        margin-top: 20vh;
+        margin-top: 15vh;
     }
 
     .card {
