@@ -84,11 +84,18 @@ export default {
     },
 
     created(){
-            setInterval(async () => {
-                const response = await fetch(`https://economia.awesomeapi.com.br/all/BTC-BRL`)
-                const data = await response.json()
-                this.bitcoinBid = data['BTC'].bid
-            },1000)
+        this.bitcoinBidUpdate()
+        setInterval( () => {
+            this.bitcoinBidUpdate()
+        },30000)
+    },
+
+    methods: {
+        async bitcoinBidUpdate(){
+            const response = await fetch(`https://economia.awesomeapi.com.br/all/BTC-BRL`)
+            const data = await response.json()
+            this.bitcoinBid = data['BTC'].bid
+        }
     }
 }
 </script>
