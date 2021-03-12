@@ -261,7 +261,7 @@ header {
 #main-content {
   max-width: 1000px;
   height: 88vh;
-  margin: 12vh 0 0;
+  margin: 14vh 0 0;
   overflow-x: hidden;
 }
 
